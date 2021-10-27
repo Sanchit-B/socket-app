@@ -9,7 +9,6 @@ const io = require('socket.io')(http, {
 const documents = {};
 
 io.on('connection', socket => {
-    console.log(`Socket ${socket.id} has connected`);
 
     let previousId;
     const safeJoin = currentId => {
